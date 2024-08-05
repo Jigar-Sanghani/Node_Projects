@@ -7,9 +7,9 @@ app.get("/", (req, res) => {
     res.send("working ")
 })
 
-app.use("/user",userRouter)
+app.use("/user", userRouter)
 
 app.listen(8090, () => {
     console.log("listening port 8090");
-   dbConnect()
+    dbConnect()
 })
